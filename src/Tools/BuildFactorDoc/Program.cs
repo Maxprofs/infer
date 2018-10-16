@@ -20,6 +20,9 @@ namespace Microsoft.ML.Probabilistic.Tools.BuildFactorDoc
 
         static int Main(string[] args)
         {
+            Console.WriteLine("### " + args[0]);
+            Console.WriteLine("### " + File.Exists(args[0]));
+
             int exitCode = 0;
             StartStatus status = GetStatus(args);
 
